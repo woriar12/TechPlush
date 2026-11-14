@@ -96,10 +96,6 @@ h6,
   font-weight: 600;
 }
 
-.magazine-logo span {
-  color: var(--accent);
-}
-
 .magazine-nav,
 .magazine-header__actions {
   display: flex;

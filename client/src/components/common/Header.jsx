@@ -55,7 +55,11 @@ const Header = () => {
     <header className="magazine-header">
       <div className="magazine-container magazine-header__inner">
         <Link to="/" className="magazine-logo" aria-label="TechPulse home">
-          TechPulse<span>.</span>
+          <img
+            src="/techpulse-tp.png"
+            alt="TechPulse"
+            className="h-14 w-[120px] object-contain"
+          />
         </Link>
 
         <nav className="magazine-nav" aria-label="Main navigation">

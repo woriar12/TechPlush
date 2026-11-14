@@ -58,8 +58,12 @@ const AdminLoginPage = () => {
             <ArrowLeft className="w-4 h-4" />
             <span>Back to website</span>
           </Link>
-          <Link to="/" className="block font-heading text-3xl font-semibold text-[#171717]">
-            TechPulse
+          <Link to="/" aria-label="TechPulse home" className="block">
+            <img
+              src="/techpulse-tp.png"
+              alt="TechPulse"
+              className="mx-auto h-14 w-14 object-contain"
+            />
           </Link>
           <h1 className="mt-2 text-lg font-semibold text-[#171717]">Admin Login</h1>
         </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import {
-  BookOpen,
   ExternalLink,
   FileText,
   FolderTree,
@@ -92,9 +91,11 @@ const AdminLayout = () => {
         <div className="bg-[#702F3B] text-white">
           <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
             <Link to="/admin/dashboard" className="flex min-w-0 items-center gap-3">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center bg-[#D5A441] text-[#292522]">
-                <BookOpen className="h-5 w-5" aria-hidden="true" />
-              </span>
+              <img
+                src="/techpulse-tp.png"
+                alt="TechPulse"
+                className="h-10 w-10 shrink-0 object-contain"
+              />
               <span className="min-w-0">
                 <span className="block font-heading text-lg font-semibold leading-tight">TechPulse</span>
                 <span className="block text-[10px] uppercase tracking-[0.16em] text-white/70">Editorial desk</span>

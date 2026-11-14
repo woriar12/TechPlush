@@ -19,8 +19,12 @@ const Footer = () => {
       <div className="magazine-container py-10">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-3 sm:col-span-2">
-            <Link to="/" className="font-heading text-2xl font-extrabold tracking-[-0.075em] text-[#171717]">
-              TechPulse
+            <Link to="/" aria-label="TechPulse home" className="inline-block">
+              <img
+                src="/techpulse-tp.png"
+                alt="TechPulse"
+                className="h-14 w-14 object-contain"
+              />
             </Link>
             <p className="max-w-md text-sm leading-relaxed text-[#666666]">
               Thoughtful reporting and practical ideas for people building with technology.
