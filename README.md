@@ -30,14 +30,14 @@ npm run dev
 
 ## Admin Login Details
 
-**Login URL:** Add your Admin Login URL
+**Login URL:** https://tech-plush.vercel.app/admin/login
 
-**Email:** Add Admin Email
+**Email:** buvibuvi346@gmail.com
 
-**Password:** Add Admin Password
+**Password:** Admin@12345
 
 ## Developer
 
-**Name:** Your Name
+**Name:** Buvanesh K 
 
-**GitHub:** Your GitHub Profile Link
+**GitHub:** https://github.com/woriar12
