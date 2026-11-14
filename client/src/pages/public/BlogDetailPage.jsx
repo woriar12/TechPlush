@@ -109,15 +109,15 @@ const BlogDetailPage = () => {
   }, [slug]);
 
   if (loading) {
-    return <LoadingSpinner message="Loading article..." minHeight="min-h-[50vh]" />;
+    return <LoadingSpinner message="Loading blog..." minHeight="min-h-[50vh]" />;
   }
 
   if (error || !blogData?.blog) {
     return (
       <div className="max-w-3xl mx-auto px-4 py-12">
         <ErrorState
-          title="Article Not Found"
-          message={error || "This article could not be loaded."}
+          title="Blog Not Found"
+          message={error || "This blog could not be loaded."}
           onRetry={fetchArticle}
         />
         <div className="text-center mt-4">
@@ -126,7 +126,7 @@ const BlogDetailPage = () => {
             className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#171717] hover:underline"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
-            <span>Back to All Articles</span>
+            <span>Back to All Blogs</span>
           </Link>
         </div>
       </div>
@@ -152,7 +152,7 @@ const BlogDetailPage = () => {
           className="inline-flex items-center gap-1.5 font-medium hover:text-[#171717] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
-          <span>All Articles</span>
+          <span>All Blogs</span>
         </Link>
 
         {blog.category && (
@@ -259,7 +259,7 @@ const BlogDetailPage = () => {
       {/* Share Section */}
       <div className="flex items-center justify-between py-5 border-t border-b border-[#E5E5E5] my-8">
         <span className="text-xs font-bold uppercase tracking-wider text-[#171717]">
-          Share this article
+          Share this blog
         </span>
         <ShareButtons title={blog.title} />
       </div>

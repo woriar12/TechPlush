@@ -65,10 +65,10 @@ const SearchPage = () => {
       <div className="mx-auto mb-8 max-w-2xl border-b border-[#E5E5E5] pb-6">
         <p className="section-kicker">Explore the archive</p>
         <h1 className="font-heading text-3xl sm:text-4xl font-bold text-[#171717] mb-2 tracking-tight">
-          Search Articles
+          Search Blogs
         </h1>
         <p className="text-xs sm:text-sm text-[#666666] mb-5">
-          Search across article titles, excerpts, and keywords.
+          Search across blog titles, excerpts, and keywords.
         </p>
 
         <SearchBar initialQuery={query} onSearch={handleSearchSubmit} />
@@ -81,18 +81,18 @@ const SearchPage = () => {
       </div>
 
       {loading ? (
-        <LoadingSpinner message="Searching articles..." />
+        <LoadingSpinner message="Searching blogs..." />
       ) : error ? (
         <ErrorState message={error} onRetry={fetchResults} />
       ) : !query.trim() ? (
         <EmptyState
           icon={Search}
           title="Type a search query"
-          description="Enter a keyword in the box above to find matching articles."
+          description="Enter a keyword in the box above to find matching blogs."
         />
       ) : blogs.length === 0 ? (
         <EmptyState
-          title={`No articles found for "${query}"`}
+          title={`No blogs found for "${query}"`}
           description="Try checking for spelling or search with a broader topic like Node.js, AI, Cloud, or React."
           actionLabel="Clear Search"
           onAction={() => setSearchParams({})}
@@ -100,7 +100,7 @@ const SearchPage = () => {
       ) : (
         <>
           <div className="text-xs text-[#666666] mb-6">
-            Found <span className="font-semibold text-[#171717]">{pagination.total}</span> matching {pagination.total === 1 ? "article" : "articles"}
+            Found <span className="font-semibold text-[#171717]">{pagination.total}</span> matching {pagination.total === 1 ? "blog" : "blogs"}
           </div>
 
           {/* Clean 3-Column Grid */}

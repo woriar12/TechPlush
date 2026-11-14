@@ -121,7 +121,7 @@ const AdminBlogListPage = () => {
 
   return (
     <div className="space-y-6">
-      <AdminHeader title="Articles" />
+      <AdminHeader title="Blogs" />
 
       {/* Filter / Search Bar */}
       <div className="bg-white p-4 rounded-md border border-[#E5E5E5]">

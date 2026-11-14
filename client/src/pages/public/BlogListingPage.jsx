@@ -88,7 +88,7 @@ const BlogListingPage = () => {
       {/* Page Header */}
       <div className="pb-5 border-b border-[#E5E5E5] mb-8">
         <h1 className="font-heading text-3xl sm:text-4xl font-bold text-[#171717] mb-2 tracking-tight">
-          All Articles
+          All Blogs
         </h1>
         <p className="text-sm text-[#666666] mb-5 max-w-xl leading-relaxed">
           Practical reporting, tutorials and ideas for people who work with technology.
@@ -105,18 +105,18 @@ const BlogListingPage = () => {
 
       {/* Main Content Area */}
       {loading ? (
-        <LoadingSpinner message="Loading articles..." minHeight="min-h-[350px]" />
+        <LoadingSpinner message="Loading blogs..." minHeight="min-h-[350px]" />
       ) : error ? (
         <ErrorState message={error} onRetry={fetchBlogs} />
       ) : blogs.length === 0 ? (
         <EmptyState
-          title="No articles found"
+          title="No blogs found"
           description={
             currentSearch
-              ? `No articles match your search "${currentSearch}". Try a different keyword.`
-              : "No articles are available in this category yet."
+              ? `No blogs match your search "${currentSearch}". Try a different keyword.`
+              : "No blogs are available in this category yet."
           }
-          actionLabel="View All Articles"
+          actionLabel="View All Blogs"
           onAction={() => setSearchParams({})}
         />
       ) : (
@@ -124,7 +124,7 @@ const BlogListingPage = () => {
           <div className="flex items-center justify-between text-xs text-[#666666] mb-6">
             <span>
               Showing <span className="font-semibold text-[#171717]">{blogs.length}</span> of{" "}
-              <span className="font-semibold text-[#171717]">{pagination.total}</span> articles
+              <span className="font-semibold text-[#171717]">{pagination.total}</span> blogs
             </span>
             {currentCategory && (
               <span className="font-semibold text-[#171717] bg-[#F5F5F5] border border-[#E5E5E5] px-2.5 py-1 rounded-sm">

@@ -76,7 +76,7 @@ const Header = () => {
         </nav>
 
         <div className="magazine-header__actions">
-          <Link to="/search" aria-label="Search articles" className="magazine-search-link">
+          <Link to="/search" aria-label="Search blogs" className="magazine-search-link">
             <Search aria-hidden="true" size={18} />
             <span>Search</span>
           </Link>
@@ -104,7 +104,7 @@ const Header = () => {
               {link.name}
             </Link>
           ))}
-          <Link to="/search">Search articles</Link>
+          <Link to="/search">Search blogs</Link>
         </nav>
       )}
     </header>

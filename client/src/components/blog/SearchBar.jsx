@@ -4,7 +4,7 @@ import { Search, X } from "lucide-react";
 const SearchBar = ({
   initialQuery = "",
   onSearch,
-  placeholder = "Search articles by title, excerpt, or keyword...",
+  placeholder = "Search blogs by title, excerpt, or keyword...",
   className = "",
 }) => {
   const [query, setQuery] = useState(initialQuery);
@@ -28,7 +28,7 @@ const SearchBar = ({
     <form onSubmit={handleSubmit} className={`w-full ${className || "max-w-xl my-3"}`}>
       <div className="flex items-center gap-2.5">
         <div className="relative flex-1">
-          <label htmlFor={inputId} className="sr-only">Search articles</label>
+          <label htmlFor={inputId} className="sr-only">Search blogs</label>
           <input
             id={inputId}
             type="text"

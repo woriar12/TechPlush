@@ -132,9 +132,9 @@ const HomePage = () => {
             <p className="magazine-kicker">TechPulse</p>
             <h1>Technology, made easier to understand.</h1>
             <p className="home-feature__excerpt">
-              Practical articles and ideas for people who work with technology.
+              Practical blogs and ideas for people who work with technology.
             </p>
-            <Link to="/blogs" className="home-feature__button">Browse Articles</Link>
+            <Link to="/blogs" className="home-feature__button">Browse Blogs</Link>
           </div>
         </section>
       )}
@@ -142,7 +142,7 @@ const HomePage = () => {
       {trendingStories.length > 0 && (
         <section className="magazine-section magazine-container home-trending" aria-labelledby="trending-heading">
           <div className="magazine-section__heading">
-            <h2 id="trending-heading">Trending Articles</h2>
+            <h2 id="trending-heading">Trending Blogs</h2>
           </div>
           <ol>
             {trendingStories.map((story) => (
@@ -169,13 +169,13 @@ const HomePage = () => {
         <section className="magazine-section magazine-container">
           <div className="magazine-section__heading">
             <div>
-              <h2>Latest Articles</h2>
+              <h2>Latest Blogs</h2>
             </div>
             <Link to="/blogs" className="magazine-read-link">View All</Link>
           </div>
 
           <form onSubmit={handleSearch} className="magazine-search">
-            <label htmlFor="home-search" className="sr-only">Search articles</label>
+            <label htmlFor="home-search" className="sr-only">Search blogs</label>
             <Search aria-hidden="true" size={17} />
             <input
               id="home-search"
@@ -183,7 +183,7 @@ const HomePage = () => {
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
               placeholder="Search the magazine"
-              aria-label="Search articles"
+              aria-label="Search blogs"
             />
             <button type="submit">Search</button>
           </form>
@@ -203,7 +203,7 @@ const HomePage = () => {
               <div>
                 <h2>Browse Categories</h2>
               </div>
-              <Link to="/blogs" className="magazine-read-link">All Articles</Link>
+              <Link to="/blogs" className="magazine-read-link">All Blogs</Link>
             </div>
             <div className="magazine-category-list">
               {categories.map((category) => (

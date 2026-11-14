@@ -16,7 +16,7 @@ import { useToast } from "../../context/ToastContext";
 
 const navItems = [
   { name: "Overview", path: "/admin/dashboard", icon: LayoutDashboard },
-  { name: "Articles", path: "/admin/blogs", icon: FileText },
+  { name: "Blogs", path: "/admin/blogs", icon: FileText },
   { name: "Categories", path: "/admin/categories", icon: FolderTree },
   { name: "Authors", path: "/admin/authors", icon: Users },
   { name: "Tags", path: "/admin/tags", icon: Tags },

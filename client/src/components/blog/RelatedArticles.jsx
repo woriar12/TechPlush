@@ -11,7 +11,7 @@ const RelatedArticles = ({ articles = [] }) => {
           Recommended Reading
         </span>
         <h3 className="text-xl font-bold text-[#171717]">
-          Related Articles
+          Related Blogs
         </h3>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -73,7 +73,7 @@ const CategoryPage = () => {
           className="inline-flex items-center gap-1.5 text-xs font-medium text-[#666666] hover:text-[#171717] mb-3 transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
-          <span>All Articles</span>
+          <span>All Blogs</span>
         </Link>
 
         <div className="mb-2">
@@ -94,20 +94,20 @@ const CategoryPage = () => {
 
       {/* Main Grid: Clean 3-Column Layout */}
       {loading ? (
-        <LoadingSpinner message="Loading articles..." minHeight="min-h-[350px]" />
+        <LoadingSpinner message="Loading blogs..." minHeight="min-h-[350px]" />
       ) : error ? (
         <ErrorState message={error} onRetry={loadData} />
       ) : blogs.length === 0 ? (
         <EmptyState
-          title={`No articles in ${category?.name || slug}`}
-          description="There are currently no published articles in this category."
-          actionLabel="Browse All Articles"
+          title={`No blogs in ${category?.name || slug}`}
+          description="There are currently no published blogs in this category."
+          actionLabel="Browse All Blogs"
           actionLink="/blogs"
         />
       ) : (
         <>
           <div className="text-xs text-[#666666] mb-6">
-            Showing <span className="font-semibold text-[#171717]">{blogs.length}</span> articles in this category
+            Showing <span className="font-semibold text-[#171717]">{blogs.length}</span> blogs in this category
           </div>
 
           <div className="grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-3">

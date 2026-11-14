@@ -15,7 +15,7 @@ const CategoryNavigation = ({ categories = [], activeSlug = null }) => {
             : "bg-white text-[#666666] border-[#E5E5E5] hover:text-[#171717] hover:border-[#171717] hover:bg-[#F5F5F5]"
         }`}
       >
-        All Articles
+        All Blogs
       </Link>
 
       {categories.map((cat) => {
