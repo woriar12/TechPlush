@@ -1,0 +1,25 @@
+{
+  "name": "techpulse-technology-blog",
+  "version": "1.0.0",
+  "description": "Production-ready technology blog publication built with MERN stack",
+  "scripts": {
+    "start:server": "cd server && npm start",
+    "dev:server": "cd server && npm run dev",
+    "seed": "cd server && npm run seed",
+    "test:server": "cd server && npm test",
+    "start:client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": [
+    "blog",
+    "technology",
+    "mern",
+    "react19",
+    "express",
+    "mongodb",
+    "tiptap",
+    "cloudinary"
+  ],
+  "author": "",
+  "license": "ISC"
+}
