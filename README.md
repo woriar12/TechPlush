@@ -32,10 +32,6 @@ npm run dev
 
 **Login URL:** https://tech-plush.vercel.app/admin/login
 
-**Email:** buvibuvi346@gmail.com
-
-**Password:** Admin@12345
-
 ## Developer
 
 **Name:** Buvanesh K 
